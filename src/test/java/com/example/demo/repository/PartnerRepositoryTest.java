@@ -1,13 +1,17 @@
 package com.example.demo.repository;
 
 import com.example.demo.DemoApplicationTests;
+import com.example.demo.model.entity.Item;
 import com.example.demo.model.entity.Partner;
+import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.time.LocalDateTime;
+import java.util.Optional;
 
+@Slf4j
 public class PartnerRepositoryTest extends DemoApplicationTests {
 
     @Autowired
@@ -47,6 +51,9 @@ public class PartnerRepositoryTest extends DemoApplicationTests {
 
     @Test
     public void read(){
+        Long id = 1L;
 
+        Optional<Partner> partner = partnerRepository.findById(id);
+        Assertions.assertTrue(partner.isPresent());
     }
 }
