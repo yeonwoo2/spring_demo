@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.*;
 
 @Component
-public abstract class CrudController<Req, Res, Entity> implements CrudInterface<Req, Res> { //abstract ?? 왜??
+public abstract class CrudController<Req, Res, Entity> implements CrudInterface<Req, Res> {//abstract 이유?? 없으면 bean 3 found 오류
 
     @Autowired(required = false)
     protected BaseService<Req, Res, Entity> baseService;

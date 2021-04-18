@@ -19,7 +19,7 @@ public class ItemRepositoryTest extends DemoApplicationTests {
     public void create(){
 
         Item item = new Item();
-        item.setStatus("UNREGISTERED");
+        //item.setStatus("UNREGISTERED");
         item.setName("삼성노트북");
         item.setTitle("삼성노트북 A100");
         item.setContent("2019년 노트북 입니다.");
@@ -28,7 +28,7 @@ public class ItemRepositoryTest extends DemoApplicationTests {
         item.setRegisteredAt(LocalDateTime.now());
 //        item.setCreatedAt(LocalDateTime.now());
 //        item.setCreatedBy("Partner01");
-        //item.setPartner(item.getPartner());
+        //item.setPartner(item.getPartner().getId());
 
 
         Item newItem = itemRepository.save(item);
