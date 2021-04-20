@@ -19,7 +19,7 @@ public class PartnerApiRequest {
 
     private String name;
 
-    private PartnerStatus status;
+    private String status;
 
     private String address;
 

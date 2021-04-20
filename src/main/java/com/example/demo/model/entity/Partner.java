@@ -29,8 +29,10 @@ public class Partner {
 
     private String name;
 
-    @Enumerated(EnumType.STRING)
-    private PartnerStatus status;  // 등록 /해지 /검수중(등록대기중)
+//    @Enumerated(EnumType.STRING)
+//    private PartnerStatus status;  // 등록 /해지 /검수중(등록대기중)
+
+    private String status;
 
     private String address;
 

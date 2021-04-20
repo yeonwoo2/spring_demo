@@ -7,10 +7,10 @@ import org.springframework.stereotype.Component;
 
 
 @Component
-public abstract class BaseService<Req,Res,Entity> implements CrudInterface<Req,Res> { // 인터페이스부분을 구현안해서 abstract class
+public abstract class BaseService<Req,Res,Entity> implements CrudInterface<Req,Res> {
 
     @Autowired(required = false)
-    protected JpaRepository<Entity, Long> baseRepository;
+    protected JpaRepository<Entity, Long> baseRepository; //인터페이스구현한놈 받겠다
                             //JpaRepository<Item,Long>
 
 }

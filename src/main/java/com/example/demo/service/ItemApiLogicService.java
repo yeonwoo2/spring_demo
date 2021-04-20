@@ -1,11 +1,9 @@
 package com.example.demo.service;
 
-import com.example.demo.ifs.CrudInterface;
 import com.example.demo.model.entity.Item;
 import com.example.demo.model.network.Header;
 import com.example.demo.model.network.request.ItemApiRequest;
 import com.example.demo.model.network.response.ItemApiResponse;
-import com.example.demo.repository.ItemRepository;
 import com.example.demo.repository.PartnerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

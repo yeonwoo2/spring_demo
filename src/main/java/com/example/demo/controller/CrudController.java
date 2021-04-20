@@ -4,11 +4,10 @@ import com.example.demo.ifs.CrudInterface;
 import com.example.demo.model.network.Header;
 import com.example.demo.service.BaseService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.*;
 
-@Component
-public abstract class CrudController<Req, Res, Entity> implements CrudInterface<Req, Res> {//abstract 이유?? 없으면 bean 3 found 오류
+
+public class CrudController<Req, Res, Entity> implements CrudInterface<Req, Res> { //abstract 이유?? 없으면 bean 3 found 오류 CrudController bean
 
     @Autowired(required = false)
     protected BaseService<Req, Res, Entity> baseService;

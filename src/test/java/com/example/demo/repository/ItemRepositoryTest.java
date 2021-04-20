@@ -2,6 +2,7 @@ package com.example.demo.repository;
 
 import com.example.demo.DemoApplicationTests;
 import com.example.demo.model.entity.Item;
+import com.example.demo.model.enumclass.ItemStatus;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,7 +20,7 @@ public class ItemRepositoryTest extends DemoApplicationTests {
     public void create(){
 
         Item item = new Item();
-        //item.setStatus("UNREGISTERED");
+        item.setStatus(ItemStatus.REGISTERED);
         item.setName("삼성노트북");
         item.setTitle("삼성노트북 A100");
         item.setContent("2019년 노트북 입니다.");
