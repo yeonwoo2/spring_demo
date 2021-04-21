@@ -17,14 +17,11 @@ public class Header<T> {
     //@JsonProperty("transaction_time")  RestApi는 일반적으로 snakecase를 사용한다
     private LocalDateTime transactionTime; //ISO
 
-
     //api 응답코드
     private String resultCode;
 
-
     //api 부가설명
     private String description;
-
 
     private T data;
 
